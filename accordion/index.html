@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Rethinking Layered Graphic Design Generation with a Top-Down Approach">
+  <meta name="keywords" content="Graphic Design, Vision Language Model, ICCV 2025">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rethinking Layered Graphic Design Generation with a Top-Down Approach</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Rethinking Layered Graphic Design Generation with a Top-Down Approach</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jingyechen.github.io/">Jingye Chen</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://research.adobe.com/person/zhaowen-wang/">Zhaowen Wang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.nxzhao.com//">Nanxuan Zhao</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/li-zhang-652bb7105/">Li Zhang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://research.adobe.com/person/difan-liu/">Difan Liu</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=GwKF9rMAAAAJ&hl=en/">Jimei Yang</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://cqf.io/">Qifeng Chen</a><sup>1</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>HKUST,</span>
+            <span class="author-block"><sup>2</sup>Adobe Research,</span>
+            <span class="author-block"><sup>3</sup>Runway</span>
+          </div>
+
+          <div class="is-size-5 has-text-centered" style="margin-top: 10px;">
+            <span class="publication-venue"><b>ICCV 2025</b></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2507.05601"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://iccv.thecvf.com/media/PosterPDFs/ICCV%202025/1807.png?t=1759591304.6827362"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 1.5rem;">
+  <div class="container is-max-desktop">
+
+    <div style="margin-bottom: 24px; text-align: center;">
+        <img src="./static/images/teaser.jpg" alt="Accordion Teaser" style="width:100%; max-width:900px; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.10);" />
+        <div style="font-size: 1rem; color: #555; margin-top: 8px;">
+        </div>
+    </div>
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The proposed Accordion is a framework that converts AI-generated graphic designs into editable layered designs while replacing nonsensical AI text with meaningful content guided by user prompts.
+            Unlike bottom-up methods (e.g., COLE, Open-COLE) that build layers element by element, Accordion adopts a top-down approach, using a reference image as global guidance to decompose layers. It employs vision language models (VLMs) across three stages and integrates vision experts like SAM and inpainting models to extract objects, backgrounds, and text.
+            Trained on the Design39K dataset (augmented with refined AI-generated samples), Accordion achieves strong results on the DesignIntention benchmark for tasks such as text-to-template, text addition, and text de-rendering, producing editable and visually coherent graphic designs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Contributions -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <br />
+        <h2 class="title is-3">Key Contributions 🎯</h2>
+        <div class="content has-text-justified">
+          <ul>
+            <li><b>Novel Top-Down Approach</b>: Unlike existing bottom-up methods that build designs element by element, Accordion takes a top-down approach by decomposing AI-generated designs into editable layers.</li>
+            <li><b>VLM-Powered Framework</b>: Built around a vision language model that plays distinct roles across three carefully curated stages for layered design generation.</li>
+            <li><b>Text Refinement</b>: Automatically refines nonsensical AI-generated text with meaningful alternatives guided by user prompts.</li>
+            <li><b>Vision Expert Integration</b>: Leverages multiple vision experts including SAM and element removal models to facilitate high-quality layer creation.</li>
+            <li><b>Design39K Dataset</b>: Introduces an augmented in-house graphic design dataset with AI-generated designs and refined ground truth.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin: 36px 0; text-align: center;">
+      <img src="./static/images/overview.jpg" alt="Accordion Overview" style="width:100%; max-width:900px; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.10);" />
+      <div style="font-size: 1rem; color: #555; margin-top: 8px;">
+        <em>Accordion framework overview: illustration of the three-stage top-down decomposition process.</em>
+      </div>
+    </div>
+
+    <!-- Method Overview -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <br />
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>Accordion</b> operates in three main stages:
+          </p>
+          <ol>
+            <li><b>Stage 1: Reference Generation</b> - Generate visually harmonious design images from user prompts using text-to-image diffusion models.</li>
+            <li><b>Stage 2: Layer Decomposition</b> - Use VLM to analyze the reference image and decompose it into constituent layers (text, objects, background) guided by specialized prompts.</li>
+            <li><b>Stage 3: Layer Refinement</b> - Refine each layer using vision experts (SAM for segmentation, inpainting models for background extraction) and replace AI-generated text with meaningful content.</li>
+          </ol>
+          <p>
+            This top-down approach ensures global visual harmony while maintaining full editability of the final design.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- INSERT_YOUR_REWRITE_HERE -->
+    <div class="columns is-centered" style="margin-top: 36px;">
+      <div class="column is-full" style="text-align: center;">
+        <img src="./static/images/figure2.jpg" alt="Stage 2: Layer Decomposition" style="width:100%; max-width:800px; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.10); margin-bottom: 40px;" />
+        <div style="font-size: 1.05rem; color: #555; margin-top: 10px; margin-bottom: 32px;">
+          <em>Figure 2 (Stage 2): Layer Decomposition – VLM analyzes and splits the reference into layers (text, objects, background).</em>
+        </div>
+        <img src="./static/images/figure3.jpg" alt="Stage 3: Layer Refinement" style="width:100%; max-width:800px; border-radius:8px; box-shadow: 0 2px 12px rgba(0,0,0,0.10);" />
+        <div style="font-size: 1.05rem; color: #555; margin-top: 10px;">
+          <em>Figure 3 (Stage 3): Layer Refinement – each layer is improved using vision experts such as SAM and inpainting for high-quality editable results.</em>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Applications -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <br />
+        <h2 class="title is-3">Applications 🚀</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accordion excels in multiple graphic design tasks:
+          </p>
+          <ul>
+            <li><b>Text-to-Template</b>: Generate fully editable design templates from text prompts</li>
+            <li><b>Adding Text to Background</b>: Intelligently place and style text on existing backgrounds</li>
+            <li><b>Text De-rendering</b>: Extract and replace text while preserving design aesthetics</li>
+            <li><b>Design Variations</b>: Create multiple design variations while maintaining visual coherence</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- INSERT_YOUR_REWRITE_HERE -->
+    <div class="columns is-centered" style="margin-top: 36px;">
+      <div class="column is-full" style="text-align: center;">
+        <div style="max-width:900px; margin: 0 auto;">
+          <img src="./static/images/text-to-template.jpg" alt="Text-to-Template: Generate editable design templates from a text prompt" style="width:100%; border-radius:12px; box-shadow:0 2px 16px rgba(0,0,0,0.12); margin-bottom: 18px;"/>
+          <div style="font-size: 1.08rem; color: #555; margin-bottom: 36px;">
+            <em>Text-to-Template: Generate editable design templates from a text prompt.</em>
+          </div>
+          <img src="./static/images/add_text_to_background.jpg" alt="Adding Text to Background: Place and style text on existing backgrounds" style="width:100%; border-radius:12px; box-shadow: 0 2px 16px rgba(0,0,0,0.12); margin-bottom: 18px;"/>
+          <div style="font-size: 1.08rem; color: #555; margin-bottom: 36px;">
+            <em>Adding Text to Background: Place and style text on existing backgrounds.</em>
+          </div>
+          <img src="./static/images/text_derendering.jpg" alt="Text De-rendering: Extract and replace text while preserving aesthetics" style="width:100%; border-radius:12px; box-shadow: 0 2px 16px rgba(0,0,0,0.12); margin-bottom: 18px;"/>
+          <div style="font-size: 1.08rem; color: #555; margin-bottom: 36px;">
+            <em>Text De-rendering: Extract and replace text while preserving design aesthetics.</em>
+          </div>
+          <img src="./static/images/variations.jpg" alt="Design Variations: Create multiple variations while maintaining coherence" style="width:100%; border-radius:12px; box-shadow: 0 2px 16px rgba(0,0,0,0.12); margin-bottom: 18px;"/>
+          <div style="font-size: 1.08rem; color: #555; margin-bottom: 0;">
+            <em>Design Variations: Create multiple variations while maintaining visual coherence.</em>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison with Existing Methods -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <br />
+        <h2 class="title is-3">Why Top-Down? 🤔</h2>
+        <div class="content has-text-justified">
+          <p>
+            Traditional bottom-up approaches (like COLE and Open-COLE) face several challenges:
+          </p>
+          <ul>
+            <li>Difficulty in maintaining global visual harmony when building designs element by element</li>
+            <li>Limited ability to ensure consistent color schemes and layout balance</li>
+            <li>Challenges in generating contextually appropriate text content</li>
+          </ul>
+          <p>
+            Our top-down approach addresses these issues by:
+          </p>
+          <ul>
+            <li>Starting with a visually complete reference that ensures global harmony</li>
+            <li>Using the reference as guidance for intelligent layer decomposition</li>
+            <li>Maintaining design coherence throughout the generation process</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Contact</h2>
+    For help or issues related to Accordion, please email Jingye Chen 
+    <a rel="license" href="mailto:qwerty.chen@connect.ust.hk">(qwerty.chen@connect.ust.hk)</a>.
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chen2025accordion,
+  title={Rethinking Layered Graphic Design Generation with a Top-Down Approach},
+  author={Chen, Jingye and Wang, Zhaowen and Zhao, Nanxuan and Zhang, Li and Liu, Difan and Yang, Jimei and Chen, Qifeng},
+  booktitle={ICCV},
+  year={2025}
+}
+</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
